@@ -1,6 +1,7 @@
 const config = require('./config/meta')
 
 module.exports = {
+  pathPrefix: "/react-frontend-wallet",
   siteMetadata: {
     siteUrl: config.siteUrl,
   },

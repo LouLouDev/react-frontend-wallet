@@ -29,6 +29,7 @@
     "gatsby-plugin-typography": "^2.2.13",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.18",
+    "gh-pages": "^2.1.1",
     "node-gzip": "^1.1.2",
     "object.omit": "^3.0.0",
     "prop-types": "^15.7.2",
@@ -59,7 +60,8 @@
     "format": "prettier --write \"src/**/*.{jsx,js}\"",
     "lint:scripts": "eslint './src/**/*.{jsx,js}'",
     "lint:styles": "stylelint './src/**/*.{jsx,js}'",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
