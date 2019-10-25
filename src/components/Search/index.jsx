@@ -100,7 +100,7 @@ export default function Search() {
   function searchMessages(value) {
     setLoading(true)
     const clientStub = new dgraph.DgraphClientStub(
-      "http://25.27.157.248:8080",
+      "https://25.27.157.248:8080",
       false,
     );
     const dgraphClient = new dgraph.DgraphClient(clientStub);
@@ -135,7 +135,7 @@ export default function Search() {
   function loadMoreMessages(value) {
     setLoading(true)
     const clientStub = new dgraph.DgraphClientStub(
-      "http://25.27.157.248:8080",
+      "https://25.27.157.248:8080",
       false,
     );
     const dgraphClient = new dgraph.DgraphClient(clientStub);

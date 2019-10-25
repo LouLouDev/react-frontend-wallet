@@ -106,7 +106,7 @@ function ChatContent(props) {
     setIDList([])
     const urlParams = new URLSearchParams(window.location.search);
     const clientStub = new dgraph.DgraphClientStub(
-      "http://25.27.157.248:8080",
+      "https://25.27.157.248:8080",
       false,
     );
     const dgraphClient = new dgraph.DgraphClient(clientStub);
@@ -157,7 +157,7 @@ function ChatContent(props) {
     var tmpMessages = messages
     IDList.slice(Start, End).forEach((item)=>{
       const clientStub = new dgraph.DgraphClientStub(
-        "http://25.27.157.248:8080",
+        "https://25.27.157.248:8080",
         false,
       );
       const dgraphClient = new dgraph.DgraphClient(clientStub);
